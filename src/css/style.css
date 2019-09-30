@@ -20,3 +20,19 @@ li{
     margin: 10px;
     list-style: none;
 }
+
+
+main{
+    padding: 10%;
+}
+
+.champ_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+img{
+    width: 500px;
+}
