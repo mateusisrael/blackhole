@@ -78,8 +78,8 @@ main{
 
 .text_container{
     width: 60%;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .champ_section{
@@ -89,8 +89,10 @@ main{
     align-items: center;
     margin-bottom: 5px;
     background: var(--primary-color);
-    padding-bottom: 30px;
-    padding-top: 50px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 23px; 
     border-radius: 7px;
     color: #fff;
 }
@@ -99,21 +101,30 @@ main{
 }
 
 img{
-    width: 380px;
+    width: 50%;
+    min-width: 380px;
     border-radius: 10px;
-    margin: 1px;
+    margin: 5px;
 }
 
-@media only screen and (max-width: 876px) {
+.img_container{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 891px) {
     .img_container{
-        display: flex;
         flex-direction: column;
+    }
+
+    .text_container{
+        width: 90%;
     }
 }
 
 @media only screen and (max-width: 652px) {
     .text_container{
-        width: 90%;
         margin-bottom: 30px;
         margin-top: 30px;
     }
