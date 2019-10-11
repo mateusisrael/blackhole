@@ -139,14 +139,33 @@ img{
     }
 }
 
-@media only screen and (max-width: 470px) {
-    .champ_section{
-        width: 98%;
+@media only screen and (max-width: 531px) {
+    nav{
+        display: none;
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 500px) {
+    .champ_section{
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 98%;
+    }
+
+    .champ_section p{
+        font-size: 15pt;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+
+
     img{
+        min-width: 200px;
         width: 300px;
     }
+}
+
+@media only screen and (max-width: 425px) {    
+
 }
