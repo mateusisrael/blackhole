@@ -3,11 +3,25 @@
     padding: 0;
 }
 
+/* Variáveis */
+:root {
+    --primary-color: #323846;
+    --secondary-color: #88D9F3⁣;
+    --blueSky-color: rgb(120, 219, 243);
+    --font-color: #FBF9F3;
+}
+
 h2, h1{
     font-family: 'Nanum Gothic', sans-serif;
 }
+
 a {
-    color: gray;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+body{
+    background: gray;
 }
 
 header{
@@ -16,8 +30,9 @@ header{
     align-items: center;
     justify-content: center;
     height: 70px;
-    background: gray;
+    background: var(--primary-color);
     padding-top: 10px;
+    color: #fff;
 }
 
 
@@ -30,8 +45,8 @@ nav{
     align-items: center;
     width: 100%;
     height: 55px;
-    background: purple;
-    box-shadow: 5px 5px 10px #474747;
+    background: var(--primary-color);
+    box-shadow: 1px 5px 10px rgb(37, 37, 37);
 
 }
 
@@ -47,14 +62,11 @@ li{
     background: white;
     width: 100px;
     height: 30px;
-    margin: 10px;
+    margin: 3px;
     list-style: none;
     border-radius: 2px;
 }
 
-li:hover{
-    background: #6d496d;
-}
 
 main{
     display: flex;
@@ -76,10 +88,11 @@ main{
     flex-direction: column;
     align-items: center;
     margin-bottom: 5px;
-    background: gray;
+    background: var(--primary-color);
     padding-bottom: 30px;
     padding-top: 50px;
     border-radius: 7px;
+    color: #fff;
 }
 .champ_section p{
     font-size: 1.4em;
