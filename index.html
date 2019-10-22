@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <meta name="theme-color" content="#323846">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <title>League of Legends</title>
 </head>
 <body>
@@ -19,23 +20,23 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#urgot_section"><p>Urgot</p></a>
+                    <a class="scroll" href="#urgot_section"><p>Urgot</p></a>
                 </li>
         
                 <li>
-                    <a href="#volibear_section"><p>Volibear</p></a>
+                    <a class="scroll" href="#volibear_section"><p>Volibear</p></a>
                 </li>
         
                 <li>
-                    <a href="#illaoi_section"><p>Illaoi</p></a>
+                    <a class="scroll" href="#illaoi_section"><p>Illaoi</p></a>
                 </li>
 
                 <li>
-                    <a href="#jax_section"><p>Jax</p></a>
+                    <a class="scroll" href="#jax_section"><p>Jax</p></a>
                 </li>
 
                 <li>
-                    <a href="#renekton_section"><p>Renekton</p></a>
+                    <a class="scroll" href="#renekton_section"><p>Renekton</p></a>
                 </li>
             </ul>
         </nav>
@@ -119,6 +120,17 @@
 
 
     </main>
+
+    
+    <script>
+        var $doc = $('html, body');
+        $('.scroll').click(function() {
+            $doc.animate({
+                scrollTop: $( $.attr(this, 'href') ).offset().top
+            }, 500);
+            return false;
+        });
+    </script>
     
 </body>
 </html>
